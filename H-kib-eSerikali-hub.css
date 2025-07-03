@@ -1,0 +1,141 @@
+/* styles */
+body {
+    font-family: "segoe UI", 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #292424;
+    color: #fff;
+}
+
+.top-banner {
+    position: relative;
+    background: #0a0a23;
+    color: #fff;
+    padding: 12px 20px;
+    font-size: 16px;
+    overflow: hidden;
+}
+
+.top-banner p {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+}
+
+.bubble {
+    position: absolute;
+    bottom: 0;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 50%;
+    animation: bubbleAnim 6s linear infinite;
+    z-index: 1;
+}
+
+@keyframes bubbleAnim {
+    from {
+        transform: translateX(100vw);
+        opacity: 1;
+    }
+    to {
+        transform: translateX(-100vw);
+        opacity: 0;
+    }
+}
+
+header {
+    text-align: center;
+    padding: 25px 15px;
+    background-color: #1a1a1a;
+}
+
+header h1 {
+    font-size: 26px;
+    color: #00bfff;
+    margin-bottom: 10px;
+    letter-spacing: 1px;
+}
+
+header p {
+    font-size: 16px;
+    color: #ccc;
+}
+
+.section-title {
+    color: #00bfff;
+    font-weight: bold;
+    font-size: 20px;
+    margin-top: 30px;
+    text-align: center;
+}
+
+.services-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    padding: 20px 10px;
+}
+
+.service-box {
+    background-color: #1e1e1e;
+    border: 1px solid #333;
+    border-radius: 15px;
+    padding: 20px 30px;
+    font-size: 15px;
+    color: #eee;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-align: center;
+    min-width: 160px;
+}
+
+.service-box:hover {
+    background-color: #00bfff;
+    color: #000;
+    transform: translateY(-3px);
+}
+
+footer {
+    text-align: center;
+    padding: 15px;
+    background: #1a1a1a;
+    color: #ccc;
+    font-size: 14px;
+}
+
+.social-icons {
+    margin-top: 0.5rem;
+}
+
+.social-icons a {
+    margin: 0 8px;
+    font-size: 1.5rem;
+    color: white;
+    transition: 0.3s ease;
+}
+.social-icons a:hover {
+    color: #00c897;
+}
+
+.social-icons img {
+    width: 30px;
+    height: 30px;
+    margin: 0;
+    transition: transform 0.3s ease;
+}
+
+.social-icons a:hover img {
+    transform: scale(1.2);
+}
+
+@media (max-width: 600px) {
+    .service-box {
+        min-width: 120px;
+        padding: 15px;
+        font-size: 14px;
+    }
+
+    header h1 {
+        font-size: 22px;
+    }
+}

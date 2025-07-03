@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="sw">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+    content="width=device-width, initial-scale=1.0">
+    <title>Usajili wa biashara - H-Kib ICT Solution</title>
+    <link rel="stylesheet" href="usajili.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=inter:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="top-banner">
+       <h1> USAJILI WA BIASHARA </h1>
+       <p>Unataka kufungua biashara yako ramsi au kusajiri kampuni? H-Kib ICT Solution inarahisisha mchakato mzima wa usajili wa biashara Tanzania <br>
+         kwa njia ya kidigitali kupitia mifumo ya serikali kama BRELa na TRA.</p>
+    </header>
+
+    <section class="section">
+        <h2>HUDUMA TUNAZOTOA</h2>
+        <ul>
+            <li>Kusaidia kujisali katika mfumo wa BRELA (ORS - Online Registration System) </li>
+            <li>Kujaza fomu za jina la biashara, kampuni au NGOs</li>
+            <li>Kufuatilia hatua za usajiri hadi cheti</li>
+            <li>Kusajili namba ya utambulisho wa mlipa kodi (TIN) kupitia TRA</li>
+            <li>Kushauri aina bora ya usajili kulingana na aina ya shughuli zako (sole proprietor, Company Limited, NGOs) n.k </li>
+        </ul>
+    </section>
+
+    <section class="section">
+            <h2>JAZA FOMU HII KULINGANA NA HUDUMA UNAYOHITAJI</h2>
+            <form onsubmit="sendTowhatsApp(); return false;">
+                <label for="jina">Jina kamili:</label>
+                <input type="text" id="jina" required>
+
+                <label for="namba">Namba ya simu:</label>
+                <input type="tel" id="simu" required>
+
+                <label for="Email">Barua Pepe:</label>
+                <input type="email" id="Barua" required>
+
+                <label for="jinalabiashara">Jina la Biashara:</label>
+                <input type="text" id="biashara" required>
+
+                <label for="aina">Aina ya biashara:</label>
+                <select id="aina" required>
+                    <option value="">-- Chagua --</option>
+                    <option value="sole proprietor">Sole proprietor</option>
+                    <option value="Company Limited">Company Limited</option>
+                    <option value="NGOs">NGOs</option>
+                </select>
+
+                <label for="maelezo">Maelezo ya ziada:</label>
+                <textarea id="maelezo" rows="4" placeholder="andika maelezo mengine muhimu..."></textarea>
+
+                <button type="submit">Tuma maombi kwa WhatsApp</button>
+            </form>
+        </section>
+        
+    <section class="section" contact-section>
+        <h2>UNAHITAJI MSAADA ZAIDI?</h2>
+        <p>Wasiliana nasi moja kwa moja kwa msaada wa haraka:</p>
+        <a href="https://wa.me/255742840200" class="WhatsApp-button" target="_blank"><i>Ongea na mtoa huduma</i></a>
+        <p><a href="huduma.html" color="#00bfff">Rudi kwenye huduma zote</a></p>
+     
+    </section>
+
+    <footer>
+        <p>&copy; 2025 H-Kib ICT Solution. Haki zote zimehifadhiwa</p>
+           <div class="social-icons">
+      <a href="facebook"><img src="images/facebook.png" alt="facebook"></a>
+      <a href="instagram"><img src="images/instagram.png" alt="instagram"></a>
+      <a href="tiktok"><img src="images/tiktok.png" alt="tiktok"></a>
+    </div>
+    </footer>
+
+    <script>
+        function sendTowhatsApp() {
+            const jina = 
+            document.getElementById("jina").value;
+            const simu = 
+            document.getElementById("simu").value;
+            const Barua = 
+            document.getElementById("barua").value;
+            const biashara = 
+            document.getElementById("biashara").value;
+            const aina = 
+            document.getElementById("aina").value;
+            const maelezo = 
+            document.getElementById("maelezo").value;
+
+            const msg = '*OMBI LA USAJILI WA BIASHARA*%oA
+            jina: ${jina}%OA
+            simu: ${simu}%OA
+            email: ${Barua}%OA
+            Jina la Biashara: ${biashara}%OA
+            Ainaa ya biashara: ${aina}%OA
+            maelezo ya ziada: ${maelezo}'';
+
+            const phone = "255742840200"; 
+
+            window.open('https://wa.me/${phone?text=${msg}', "_blank");
+        }
+    </script>
+</body>
+</html>

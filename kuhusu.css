@@ -1,0 +1,251 @@
+/* resert ya msingi */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* kuhusu.css - muonekano wa ukurasa wa kuhusu */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+header {
+    background-color: #1f1844;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+
+nav a {
+    color: white;
+    justify-content: space-between;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+}
+
+main {
+    padding: 40px 20px;
+    justify-content: space-between;
+    max-width: 800px;
+    margin: auto;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.about-section {
+    padding: 60px 20px;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+.about-section h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.about-section p {
+    max-width: 800px;
+    margin: 0 auto 30px auto;
+    font-size: 18px;
+    color: #555;
+    line-height: 1.6;
+}
+
+.about-contact {
+    background-color: #f0f0f0;
+    padding: 30px 20px;
+    margin: 40px auto;
+    max-width: 700px;
+    text-align: center;
+    border-radius: 12px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.08));
+}
+
+.about-contact h3 {
+    color: #001866;
+    margin-bottom: 13px;
+}
+
+.about-contact p {
+    color: #333;
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+.contact-link {
+    text-decoration: none;
+    background-color: #057f9e;
+    color: white;
+    padding: 10px 24px;
+    border-radius: 6px;
+    font-weight: bold;
+    transition: background 0.3s ease;
+}
+
+.contact-link:hover {
+    background-color: #2da7a7;
+}
+
+
+
+/* common section styles */
+section {
+    padding: 60px 20px;
+    max-width: 1000px;
+    margin: auto;
+}
+
+section h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #1e293b;
+}
+
+section ul {
+    list-style: disc;
+    padding-left: 20px;
+}
+
+section li {
+    margin-bottom: 10px;
+}
+
+/* about, goals, vision, values */
+.about, .goals, .vision, .values {
+    background: #f1f5f9;
+    margin-bottom: 40px;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+/* founder */
+.about-founder {
+    max-width: 900px;
+    margin: auto;
+    padding: 2rem;
+    line-height: 1.8;
+    font-size: 1rem;
+    color: #333;
+}
+
+.about-founder h2 {
+    text-align: center;
+    color: #00c897;
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+}
+.founder img {
+    width: 150px;
+    height: 150px;
+    border-radius: 100%;
+    object-fit: cover;
+    position: center;
+}
+
+
+
+/* CTA section */
+.cta {
+    background: #1e40af;
+    color: white;
+    text-align: center;
+    padding: 60px 20px;
+    border-radius: 12px;
+}
+
+.cta h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.cta p {
+    margin-bottom: 20px;
+}
+
+.cta .btn {
+    background: white;
+    color: #1e40af;
+    padding: 12px 30px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 8px;
+    transition: all 0.3s ease-in-out;
+}
+
+.cta .btn:hover {
+    background: #c7d2fe;
+}
+
+/* Footer */
+.footer {
+    background-color: #1c1c1e;
+    color: white;
+    padding: 1.2rem;
+    text-align: center;
+    font-size: 0.95rem;
+}
+
+.footer a {
+    color: #00c897;
+    text-decoration: none;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+
+.footer-top p {
+    margin-top: 0.5rem 0;
+}
+
+.social-icons {
+    margin-top: 0.5rem;
+}
+
+.social-icons a {
+    margin: 0 8px;
+    font-size: 1.5rem;
+    color: white;
+    transition: 0.3s ease;
+}
+.social-icons a:hover {
+    color: #00c897;
+}
+
+.social-icons img {
+    width: 30px;
+    height: 30px;
+    margin: 0;
+    transition: transform 0.3s ease;
+}
+
+.social-icons a:hover img {
+    transform: scale(1.2);
+}
+
+.footer-bottom {
+    margin-top: 0.8rem;
+    font-size: 0.85rem;
+    border-top: 1px solid #333;
+    padding-top: 0.5rem;
+}
+
+@media (max-width: 600px) {
+    .footer-top p{
+        display: block;
+    }
+
+    .footer-top p a {
+        display: inline-block;
+        margin-top: 5px;
+    }
+}

@@ -1,0 +1,131 @@
+/* msingi wa mwili mzima */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f3f4f6;
+    margin: 0;
+    padding: 0;
+    color: #1f2937;
+}
+
+/* header ya juu */
+header {
+    background-color: #1e3a8a;
+    color: white;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+header h1{
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 18px;
+    font-weight: 300;
+}
+
+/* sehemu ya ushuhuda wote */
+.testimonials-section {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minimax(280px, 1fr));
+    gap: 20px;
+    padding: 40px 20px;
+    max-width: 1100px;
+    margin: auto;
+}
+
+/*ushuhuda mmoja mmoja */
+.testimonial {
+    background-color: white;
+    border-left: 4px solid #2563eb;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+    transition: transform 0.3s ease;
+}
+
+.testimonial:hover {
+    transform: translateY(-5px);
+}
+
+.testimonial h3 {
+    margin-bottom: 10px;
+    font-size: 20px;
+    color: #1e40af;
+}
+
+.testimonial p {
+    font-style: italic;
+    margin-bottom: 10px;
+}
+
+.testimonial span {
+    font-size: 14px;
+    color: #6b7280;
+}
+
+/* Footer */
+.footer {
+    background-color: #1e1e41;
+    color: white;
+    padding: 1.2rem;
+    text-align: center;
+    font-size: 0.95rem;
+}
+
+.footer a {
+    color: #00c897;
+    text-decoration: none;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+
+.footer-top p {
+    margin-top: 0.5rem 0;
+}
+
+.social-icons {
+    margin-top: 0.5rem;
+}
+
+.social-icons a {
+    margin: 0 8px;
+    font-size: 1.5rem;
+    color: white;
+    transition: 0.3s ease;
+}
+.social-icons a:hover {
+    color: #00c897;
+}
+
+.social-icons img {
+    width: 30px;
+    height: 30px;
+    margin: 0;
+    transition: transform 0.3s ease;
+}
+
+.social-icons a:hover img {
+    transform: scale(1.2);
+}
+
+.footer-bottom {
+    margin-top: 0.8rem;
+    font-size: 0.85rem;
+    border-top: 1px solid #333333;
+    padding-top: 0.5rem;
+}
+
+@media (max-width: 600px) {
+    .footer-top p{
+        display: block;
+    }
+
+    .footer-top p a {
+        display: inline-block;
+        margin-top: 5px;
+    }
+}
