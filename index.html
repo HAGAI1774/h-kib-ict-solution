@@ -9,10 +9,26 @@
 </head>
 
 <body>
-    <div class="confetti-container"></div>
-    <header class="main-header">
-      <h1>H-Kib ICT Solution</h1>
-      <nav class="main-nav">
+    <header class="navbar">
+     <!-- hambuger button -->
+      <div class="side-menu" id="sidemenu">
+        <button class="close-btn" onclick="togglemenu()">x</button>
+        <h3>Huduma za Serikali</h3>
+          <ul>
+            <li><a href="usajili-serikali.html">Usajili</a></li>
+            <li><a href="Ajira.html">Ajira</a></li>
+            <li><a href="malipo.html">Malipo</a></li>
+            <li><a href="biashara.html">Vyeti na Usajili</a></li>
+            <li><a href="elimu.html">Elimu</a></li>
+            <li><a href="Afya.html">Afya</a></li>
+            <li><a href="ufuatiliaji.html">Ufuatiliaji</a></li>
+          </ul>
+      </div>
+      <!-- Hamburger button -->
+       <button class="hambuger-btn" onclick="togglemenu()"><a href="H-kib-eSerikali-hub.html">&#9776</a></button>
+
+      <h1 class="logo">H-Kib ICT Solution</h1>
+      <nav>
         <ul>
             <li><a href="index.html" class="active"> Nyumbani </a></li>
             <li><a href="kuhusu.html"> Kuhusu </a></li>
@@ -25,6 +41,13 @@
 
     <!-- optional: sehemu ya AI description na services unaweza ongeza baadaye -->
 
+    <script>
+      // Fungua/funga menu
+
+      document.getElementById("humburger").addEventlistener("click", function () {
+        document.querySelector(".hambuger-menu").classList.toggle("open");
+      });
+    </script>
 <section class="slideshow-container">
   <div class="slide fade">
     <img src="images/slide1.jpg" alt="picha ya kwanza ya H-Kib ICT">
@@ -60,18 +83,22 @@
       </div>
     </div>
   </div>
+  <section  class="huduma-serikali-preview">
+  <div class="container">
+    <h3>H-Kib eSerikali</h3>
+    <p>Tunakupa msaada wa haraka kwa huduma muhimu kama usajiri wa BRELLA, NHIF, HELSB na zingineno nyingi - bila foleni wala usumbufu</p>
+    <a href="huduma-za-serikali.html" class="soma-zaidi-btn">Soma zaidi</a>
+  </div>
+</section>
   <a href="huduma.html" class="view-all-link">Tazama huduma zote</a>
 </section>
 
 <section id="kuhusu" class="about-section">
     <div class="container">
     <h2>Kuhusu H-Kib ICT Solution</h2>
-    <p>H-Kib ICT Soluttion ni jukwaa la kisasa la kiteknolojia lililojikita katika kutoa huduma bora na nafuu za ICT kwa jamii ya kitanzania.
-      Tunachanganya ubunifu, ufanisi, na teknolojia ya kisasa ili kuhakikisha kila mteja anapata suluhisho la kweli</p>
-
-    <p>
-      Tumejengwa kwa misingi ya uwazi, uaminifu na ubora, tukilenga kuwafikia watanzania wote - mijini na vijijini - kupitia huduma zinazopatikana mtandaoni au mawasiliano ya moja kwa moja.
-     </p>
+    <p>H-Kib ICT Solution ni mtoa huduma bora za Teknolojia ya habari na Mawasiliano.
+    Tunatoa huduma za Matengenezo ya Kompyuta, ushauri wa kiteknolojia, na kuuza software halisi zenye kuzingatia mahitaji ya jamii ya sasa.
+      Lengo letu ni kukuza ufanisi wa kidigitali kwa watu na biashara kote Tanzania.</p>
     </div>
     <a href="kuhusu.html" class="btn-view-more">Soma zaidi</a>
    </section>
@@ -195,24 +222,6 @@
       menu.style.left = "0px";
     }
   }
- </script>
-
- <script>
-  const container = 
-  document.queryselector('.confetti-container');
-    for (let i = 0; i < 80; i++) {
-      const confetti = 
-      document.createElement('div');
-      confetti.classList.add('confetti');
-      confetti.style.left = Math.random() * 100 + "vw";
-      confetti.style.animationDelay = marth.random() * 2 + 's';
-      confetti.style.setProperty('--i', Math.random());
-      container.appendchild(confetti);
-        }
-
-  setTimeout(() => {
-    container.innerHTML = "";
-  }, 5000)
  </script>
 </body>
 <!-- Scroll To Top Button -->
